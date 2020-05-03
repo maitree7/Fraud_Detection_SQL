@@ -23,21 +23,25 @@ Define a database model to store the credit card transactions data and create a 
 
 ## Files
 
+### Query Files
+
+* [schema.sql](SQL/schema.sql)
+* [seed.sql](SQL/seed.sql)
+
+### CSV Files
+
 * [card_holder.csv](Data/card_holder.csv)
 * [credit_card.csv](Data/credit_card.csv)
 * [merchant_category.csv](Data/merchant_category.csv)
 * [merchant.csv](Data/merchant.csv)
 * [transaction.csv](Data/transaction.csv)
 
-## Instructions
 
 ### Data Modeling
 
 Create an entity relationship diagram (ERD) by inspecting the provided CSV files.
 
 **Note:** For the `credit_card` table, the `card` column should be a VARCHAR(20) datatype rather than an INT.
-
-Part of the challenge here is to figure out how many tables you should create, as well as what kind of relationships you need to define among the tables.
 
 Tool used to develop ERD [Quick Database Diagrams](https://app.quickdatabasediagrams.com/#/) to create your model.
 
@@ -48,6 +52,7 @@ Tool used to develop ERD [Quick Database Diagrams](https://app.quickdatabasediag
 Using your database model as a blueprint, create a database schema for each of your tables and relationships. Specify data types, primary keys, foreign keys, and any other constraints you defined.
 
 After creating the database schema, import the data from the corresponding CSV files.
+
 
 ### Data Analysis
 
@@ -63,9 +68,9 @@ Top 100 highest transactions during early hours i.e. 7:00 to 9:00 AM
 
 * Once you have a query that can be reused, create a view for each of the previous queries.
 
-Create a report for fraudulent transactions of some top customers of the firm. To achieve this task, perform a visual data analysis of fraudulent transactions using Pandas, Plotly Express, hvPlot, and SQLAlchemy to create the visualizations.
+Created a report for fraudulent transactions of some top customers of the firm using Pandas, Plotly Express, hvPlot, and SQLAlchemy to create the visualizations.
 
-* Verify if there are any fraudulent transactions in the history of two of the most important customers of the firm. For privacy reasons, you only know that their cardholders' IDs are 18 and 2.
+* Fraudulent transactions in the history of two of the most important customers of the firm on the basis of their cardholders' IDs are 18 and 2.
 
  ![id_holder_2](Images/id_holder_2.PNG)
  ![id_holder_18](Images/id_holder_18.PNG)
@@ -74,7 +79,8 @@ Create a report for fraudulent transactions of some top customers of the firm. T
 
 * The CEO of the firm's biggest customer suspects that someone has used her corporate credit card without authorization in the first quarter of 2018 to pay for several expensive restaurant bills. You are asked to find any anomalous transactions during that period.
 
-  * Using Plotly Express, create a series of six box plots, one for each month, in order to identify how many outliers there are per month for cardholder ID 25.
+  * Using Plotly Express, created a series of six box plots, one for each month, in order to identify how many outliers there are per month for cardholder ID 25.
+  
   ![id_holder_25](Images/id_holder_25.PNG)
 
   * Observations : `There seems to be fraudulent transactions pertaining to Restaurant & Food Truck category where Food Truck is ranging from $1.46 to $1046`
