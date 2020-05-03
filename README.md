@@ -6,7 +6,7 @@
 
 ## Background
 
-Fraud is everywhere these days—whether you are a small taco shop or a large international business. While there are emerging technologies that employ machine learning and artificial intelligence to detect fraud, many instances of fraud detection still require strong data analytics to find abnormal charges.
+Fraud is everywhere these daysâ€”whether you are a small taco shop or a large international business. While there are emerging technologies that employ machine learning and artificial intelligence to detect fraud, many instances of fraud detection still require strong data analytics to find abnormal charges.
 
 Application of new SQL skills to analyze historical credit card transactions and consumption patterns in order to identify possible fraudulent transactions.
 
@@ -41,7 +41,7 @@ Part of the challenge here is to figure out how many tables you should create, a
 
 Tool used to develop ERD [Quick Database Diagrams](https://app.quickdatabasediagrams.com/#/) to create your model.
 
-![QuickDBD-export](Images/QuickDBD-export.PNG)
+![QuickDBD-export](Images/QuickDBD-export.png)
 
 ### Data Engineering
 
